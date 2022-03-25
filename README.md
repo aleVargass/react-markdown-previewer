@@ -1,4 +1,4 @@
-# React-markdown-previewer
+# React Markdown Previewer
 
 ### Description
 
