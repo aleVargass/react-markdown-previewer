@@ -6,15 +6,16 @@
   "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
     "start": "webpack serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack --mode production"
   },
   "author": "Ale Vargas",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.7.1",
@@ -30,7 +31,6 @@
     "marked": "^4.0.12",
     "prismjs": "^1.27.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "terser": "^5.12.1"
+    "react-dom": "^17.0.2"
   }
 }
