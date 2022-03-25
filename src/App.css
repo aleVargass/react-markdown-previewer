@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #F9F9F9;
+}
+
+.toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #20232A;
+  color: #60DBFB;
+  padding: .6rem;
+  font-family: "Noto Sans Mono", monospace;
+  font-weight: 500;
+}
+
+.toolbar .icon {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.toolbar .icon:hover {
+  opacity: .9;
+}
+
+.editorWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.25rem auto;
+  margin-top: 25px;
+  max-width: 600px;
+}
+
+.editorWrap .editor {
+  font-family: "Noto Sans Mono", monospace;
+  overflow: visible;
+  min-height: 200px;
+  resize: vertical;
+  padding: 4px;
+  outline: none;
+  background-color: #FFFEFE;
+}
+
+.previewerWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.25rem auto;
+  margin-top: 25px;
+  max-width: 850px;
+  border: 1px solid #20232A;
+}
+
+.maximized {
+  width: 96%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.maximized .editor {
+  min-height: 95vh;
+  resize: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .editorWrap {
+    max-width: 550px;
+  }
+  .previewerWrap {
+    max-width: 630px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .maximized {
+    width: 95%;
+    margin: auto;
+  }
+  .previewerWrap {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .body {
+    font-size: .875rem;
+  }
+}
+
+.previewer {
+  font-family: "Lato", sans-serif;
+  padding: 0 1rem;
+  overflow-wrap: break-word;
+  background-color: #FFFEFE;
+}
+
+.previewer blockquote {
+  border-left: 3px solid #20232A;
+  color: #20232A;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+.previewer > p > code {
+  padding: 3px;
+}
+
+.previewer code {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.previewer pre {
+  display: block;
+  overflow: auto;
+  padding: 5px;
+  line-height: 1.2;
+}
+
+.previewer h1 {
+  border-bottom: 2px solid #20232A;
+}
+
+.previewer h2 {
+  border-bottom: 1px solid #20232A;
+}
+
+.previewer table {
+  border-collapse: collapse;
+}
+
+.previewer td,
+.previewer th {
+  border: 2px solid #20232A;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.previewer img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+/*# sourceMappingURL=app.css.map */

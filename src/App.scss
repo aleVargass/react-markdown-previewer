@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500&display=swap');
+$backgroundColor: #F9F9F9;
+$backgroundWindow: #FFFEFE;
+$toolbarColor: #20232A;
+$textToolbarColor: #60DBFB;
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: $backgroundColor;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $toolbarColor;
+  color: $textToolbarColor;
+  padding: .6rem;
+  font-family: "Noto Sans Mono", monospace;
+  font-weight: 500;
+  .icon {
+      cursor: pointer;
+      padding: 4px;
+      &:hover {
+          opacity: .9;
+      }
+  }
+}
+
+.editorWrap {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem auto;
+  margin-top: 25px;
+  max-width: 600px;
+  .editor {
+    font-family: "Noto Sans Mono", monospace;
+    overflow: visible;
+    min-height: 200px;
+    resize: vertical;
+    padding: 4px;
+    outline: none;
+    background-color: $backgroundWindow;
+  }
+}
+
+.previewerWrap {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem auto;
+  margin-top: 25px;
+  max-width: 850px;
+  border: 1px solid $toolbarColor;
+}
+
+.maximized {
+  width: 96%;
+  min-height: 100vh;
+  margin: auto;
+  .editor {
+      min-height: 95vh;
+      resize: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .editorWrap {
+    max-width: 550px;
+  }
+  .previewerWrap {
+    max-width: 630px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .maximized {
+    width: 95%;
+    margin: auto;
+  }
+  .previewerWrap {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .body {
+    font-size: .875rem;
+  }
+}
+  
+// markdown styles
+.previewer {
+  font-family: "Lato", sans-serif;
+  padding: 0 1rem;
+  overflow-wrap: break-word;
+  background-color: $backgroundWindow;
+  blockquote {
+    border-left: 3px solid $toolbarColor;
+    color: $toolbarColor;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+  > p > code {
+    padding: 3px;
+  }
+  code {
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+  pre {
+    display: block;
+    overflow: auto;
+    padding: 5px;
+    line-height: 1.2;
+  }
+  h1 {
+    border-bottom: 2px solid $toolbarColor;
+  }
+  h2 {
+    border-bottom: 1px solid $toolbarColor;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    border: 2px solid $toolbarColor;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  img {
+    display: block;
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+}
