@@ -2,7 +2,7 @@
   "name": "markdown-previewer",
   "version": "1.0.0",
   "description": "React markdown previewer",
-  "homepage": "https://aleVargass.github.io",
+  "homepage": "https://alevargass.github.io/react-markdown-previewer/",
   "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
