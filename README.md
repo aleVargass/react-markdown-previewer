@@ -1,5 +1,5 @@
-# React-markdown-previewer
+# React Markdown Previewer
 
 ### Description
 
-This is a simple react markdown previewer using marked, prismjs, webpack and babel. It was made for the respectively project in freeCodeCamp.
+This is a simple react markdown previewer using marked, prismjs, webpack and babel
