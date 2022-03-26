@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack serve",
-    "predeploy": "npm run public",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d public"
   },
   "author": "Ale Vargas",
