@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "React markdown previewer",
   "homepage": "https://alevargass.github.io/react-markdown-previewer/",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
     "start": "webpack serve",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run public",
+    "deploy": "gh-pages -d public"
   },
   "author": "Ale Vargas",
   "license": "ISC",
